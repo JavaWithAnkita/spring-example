@@ -13,12 +13,12 @@ public class SpringDemoApplication {
 	
 	@GetMapping("/")
 	public String welcome(){
-		return "Welcome to openshift"
+		return "Welcome to openshift";
 	}
 
 	@GetMapping("/{input}")
 			public String congrats(@PathVariable String input){
-				return "Congrats" + input + "U have successfully deployed application on Openshift"
+				return "Congrats" + input + "U have successfully deployed application on Openshift";
 			}
 
 }
